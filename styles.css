@@ -1,0 +1,358 @@
+* {
+	/*word-break: break-word;*/
+	font-family: Verdana;
+	background-color: white;
+}
+
+body{
+
+
+	display: block;
+}
+
+/* HEADER */
+
+header{
+	width: 70%;
+}
+
+header ul {	
+	margin: 0 0 0 20px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: inline-block;
+    color: #888888;
+    text-align: center;
+    margin: 0px 40px 0px 0;
+    padding: 15px 0;  
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+header li a:hover{
+    color: red;
+}
+
+header .active {
+    color: #111111;
+    border-bottom: 5px solid red;
+}
+
+header li img {
+	padding: 0px 10px;
+}
+
+h1{ 
+	font-weight: normal; 
+	margin:35px 0px 20px 0;
+}
+
+.clearafter:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sectionwrap{
+	display: table;
+	width: 100%;
+}
+
+
+section{
+
+	max-width: 70%;
+	padding-left: 30px;
+	float: left;
+}
+
+/* CONTENTBOX */
+
+section .contentbox{
+	color: black;
+	text-decoration: none;
+	overflow-x: hidden;
+}
+
+section .contentbox .sub{
+	padding: 20px 0 0 0 ;
+}
+
+section .contentbox .subheader{
+	color: black;
+	font-size: 1.25em;
+}
+
+section .contentbox a{
+	color: black;
+	text-decoration: none;
+}
+
+section .contentbox .sublink{
+	float: right; 
+	margin: 0 70px 0 0;
+
+}
+section .contentbox .sublink:hover{
+
+	color: red;
+}
+
+section .contentbox .imgboxwrap{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+section .contentbox .image{ 
+ 
+}
+
+section .contentbox .desc{
+	padding: 10px 0px;
+	font-size: 1.25em;
+}
+
+section .contentbox .addition{
+	font-size: 0.95em;
+}
+
+
+
+section .contentbox .imgbox:hover .desc{
+	color:red;
+}
+section .contentbox .imgbox:hover .addition{
+	color:black;
+}
+
+
+section .contentbox .artist{
+	border-radius: 50%;
+}
+
+section .contentbox .imgbox{
+	float: left;
+	margin: 0px 40px 20px 0px;
+	padding: 10px;	
+    border: 2px solid white; 
+}
+
+section .contentbox .imgbox:hover {
+    border: 2px solid gold;
+
+}
+section .contentbox .imgbox:hover .image {
+    opacity: 0.75;
+}
+
+/* ASIDE*/
+
+aside{
+	overflow: hidden;
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    right: 0;
+    top:0;
+    overflow: auto; 
+    border-left: 1px solid #dddddd; 
+}
+
+aside li{
+	min-height: 145px;
+	display: block;
+	margin: 45px 0px 0px 60px;
+}
+
+aside .sideimgwrap{
+	float: left;
+	min-width: 40%;
+}
+
+aside .shape{
+	width: 100px;
+    height: 100px; 
+    /*padding: 10px 10px 10px 30px; */
+    border-radius: 50%;
+    background-color: black; 
+    z-index: 0;
+}
+
+aside li:hover .sidetext{
+	color: red;
+}
+
+aside li:hover .shape{
+	background-color: #555555; 
+}
+
+aside img{
+	height: 100px; 
+	width: 100px; 
+	z-index: 1;
+}
+
+aside .sidetext{
+	word-break: normal; 
+	float:left;
+	text-align: left;
+	min-height: 10px;
+	width: 200px;
+	margin: 20px 0px 20px 0px;
+	color: #888888;
+	font-size: 1.5em;
+}
+
+
+/* ARTISTBOX */
+
+section.full{
+	width: 100%;
+}
+
+section .artist_{
+	width: 100%;
+	display: block;
+	float: left;
+	padding: 30px 30px 30px 0px;
+	
+}
+
+section .artistphoto{
+	height: 200px;	
+	width: 200px;
+	margin-left: 30px;
+	margin-right:50px;
+	float: left;
+
+}
+
+section .artistphoto .shape{border-radius: 50%;} 
+
+section .artisttext h1{
+	font-size:  2em;
+	font-weight: bold;
+}
+section .artisttext h3{
+	color: #888888;
+	font-size: 1.25em;;
+	font-weight: normal;
+
+}
+
+section .artisttext{
+	margin: 20px 0 0 0 ;
+    min-height: 150px;
+    max-height: 200px;
+    float: left;
+    display: block;
+}
+
+
+
+table{
+	float: left;
+	border-collapse: collapse;  
+	counter-reset: row-counter;	
+	vertical-align: center;
+	font: 1.25em solid;
+	min-width: 60%;
+}
+
+
+table tr{
+	height: 50px;	
+}
+
+table tr:hover {  
+	color: red;
+}
+
+table td{
+	vertical-align: center;
+}
+
+table .row-counter:before {
+	position: relative;
+	display: block;
+    padding-right: 5px; 
+	line-height: 50px;
+	vertical-align: center;
+	counter-increment: row-counter;
+	content: counter(row-counter);
+	color: #888888;
+}
+
+table .centercolomn{
+	width: 80%;
+}
+
+
+
+td:nth-child(2) { color: #888888; }
+
+
+
+
+section .albumbox{
+	float: left;
+	display: block;
+	width: 100%;
+	border-top: 1px solid #dddddd; 
+}
+
+section .wrapper{
+	padding: 30px 30px 30px 30px;
+}
+
+
+section .albumphotobox{
+	min-width: 30%;
+	float: left;
+    display: block;
+    padding: 5px 70px 0 40px;
+	/*padding: 0 30px 0 30px;*/
+}
+
+
+section .albumphotobox .imgbox:hover .image {
+    opacity: 1;
+}
+
+section .albumphotobox .imgbox:hover {
+    border: 2px solid white;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+    float: left;
+    width: 70%;   
+}
+footer div{
+	font-size: 1em; 
+	color: #888888;
+	display: block;
+    border-top: 1px solid #dddddd; 
+	padding: 20px 0 20px 30px;
+}
+
